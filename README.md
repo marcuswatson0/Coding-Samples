@@ -42,22 +42,28 @@ Output = 6
 
 Roll the dice. Use randint() to create the variable dice.
 Finish the if-elif-else construct by replacing ___:
-If dice is 1 or 2, you go one step down.
-if dice is 3, 4 or 5, you go one step up.
-Else, you throw the dice again. The number of eyes is the number of steps you go up.
-Print out dice and step. Given the value of dice, was step updated correctly?
+#If dice is 1 or 2, you go one step down.
+#if dice is 3, 4 or 5, you go one step up.
+#Else, you throw the dice again. The number of eyes is the number of steps you go up.
+#Print out dice and step. Given the value of dice, was step updated correctly?
 
-# Starting step
+#Starting step
 step = 50
-# Roll the dice
+#Roll the dice
 dice = np.random.randint(1, 7)
-# Finish the control construct
+#Finish the control construct
 if dice <= 2 :
     step = step - 1
 elif dice < 2 and dice > 6 :
     step = step + 1
 else :
     step = step + np.random.randint(1, 7)
-# Print out dice and step
+#Print out dice and step
 print(dice)
 print(step)
+
+
+
+# Making Matrices using nested list comprehensions
+Create a 5 x 5 matrix using a list of lists: matrix
+matrix = [[col for col in range(5)] for row in range(5)]
