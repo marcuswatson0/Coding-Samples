@@ -62,6 +62,10 @@ else :
 print(dice)
 print(step)
 
+# list comprehension format
+[[output expression] for iterator variable in iterable]
+# list comprehension using conditions format
+[output expression for iterator variable in iterable if predicate expression]
 
 
 # Making Matrices using nested list comprehensions
