@@ -95,3 +95,6 @@ with engine.connect() as con:
 
 #Confirm that both methods yield the same result
 print(df.equals(df1))
+
+# Ex: Filtering INNER JOIN queries with condition
+df = pd.read_sql_query('SELECT * FROM PlaylistTrack INNER JOIN Track on PlaylistTrack.TrackId = Track.TrackId WHERE Milliseconds < 250000',engine)
