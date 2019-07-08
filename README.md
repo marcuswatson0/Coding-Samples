@@ -67,11 +67,9 @@ print(step)
 # list comprehension using conditions format
 [output expression for iterator variable in iterable if predicate expression]
 
-
 # Making Matrices using nested list comprehensions
 Create a 5 x 5 matrix using a list of lists: matrix
 matrix = [[col for col in range(5)] for row in range(5)]
-
 
 # Querying relational databases (SQLite)
 #Import packages
