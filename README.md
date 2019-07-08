@@ -9,7 +9,6 @@ Coding-Samples
 for word in np.nditer(np_baseball):
     print(word)
     
-
 #Loop over Pandas DataFrame    
 #Use .apply(str.upper) vs iterrows() 
 
