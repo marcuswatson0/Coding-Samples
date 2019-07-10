@@ -133,3 +133,7 @@ text = r.text
 
 #Print the html
 print(text)
+
+
+# Convert temps_f to celsius: temps_c
+temps_c = temps_c.columns.str.replace('F', 'C')
