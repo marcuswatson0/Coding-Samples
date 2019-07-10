@@ -137,3 +137,6 @@ print(text)
 
 # Convert temps_f to celsius: temps_c
 temps_c = temps_c.columns.str.replace('F', 'C')
+
+# Merge auto and oil: merged
+merged = pd.merge_asof(auto, oil, left_on='yr', right_on='Date')
