@@ -8,7 +8,8 @@
 for word in np.nditer(np_baseball):
     print(word)
     
-#Loop over Pandas DataFrame    
+#Loop over Pandas DataFrame 
+
 #Use .apply(str.upper) vs iterrows() 
 #adding a column
 for lab, row in brics.iterrows() :
