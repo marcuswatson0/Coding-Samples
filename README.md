@@ -1,5 +1,4 @@
 # Coding-Samples 
-
 #Loop over Numpy array
 #For loop over np_baseball
 
