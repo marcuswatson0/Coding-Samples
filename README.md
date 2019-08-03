@@ -209,6 +209,29 @@ select = Select(title="distribution", options=['female_literacy', 'population'],
 # Attach the update_plot callback to the 'value' property of select
 select.on_change('value', update_plot)
 
+
+
+
+MAKING A BUTTON
+# Create a Button with label 'Update Data'
+button = Button(label='Update Data')
+
+# Define an update callback with no arguments: update
+def update():
+
+    # Compute new y values: y
+    y = np.sin(x) + np.random.random(N)
+
+    # Update the ColumnDataSource data dictionary
+    source.data = {'x': x, 'y': y}
+
+# Add the update callback to the button
+button.on_click(update)
+
+# Create layout and add to current document
+layout = column(widgetbox(button), plot)
+curdoc().add_root(layout)
+
 # Create layout and add to current document
 layout = row(select, plot)
 curdoc().add_root(layout)
